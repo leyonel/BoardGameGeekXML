@@ -752,10 +752,19 @@ class Repositorio_jugadas extends repositorio_jugadas {
     throw UnimplementedError();
   }
 
-  List obtenerValorCampo(XmlDocument documento, String campo) {
-    const campoValor = 'name';
-    List lista = [];
-    lista.add(documento.findAllElements(campo).first.getAttribute(campoValor));
+  List obtenerValorCampo(XmlDocument documento) {
+    List<String> lista = [];
+
+    documento
+        .findAllElements("plays")
+        .first
+        .findAllElements("play")
+        .forEach((element) {
+      String jugada =
+          element.findAllElements("item").first.getAttribute("name") ?? "";
+
+      jugada == "" ? null : lista.add(jugada);
+    });
 
     return lista;
   }
