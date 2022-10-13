@@ -1,18 +1,21 @@
-import 'package:flutter_application_1/dominio/registro_jugadas.dart';
+import 'dart:html';
+
+import 'package:flutter_application_1/dominio/juego_jugado.dart';
 import 'package:flutter_application_1/dominio/registro_usuario.dart';
 import 'package:flutter_application_1/dominio/variable_dominio.dart';
 import 'package:fpdart/fpdart.dart';
 import 'package:flutter_application_1/dominio/problema.dart';
 import 'package:xml/xml.dart';
 import 'package:http/http.dart' as http;
-import '../dominio/variable_dominio.dart';
+import '../../dominio/variable_dominio.dart';
 
-abstract class repositorio_jugadas {
-  Either<Problema, RegistroJugadas> obtenerJugadasRegistradas();
+abstract class RepositorioJuegosJugados {
+  Future<Either<Problema, Set<JuegoJugado>>> obtenerJugadasRegistradas(
+      NickFormado nick);
 }
 
-class Repositorio_jugadas extends repositorio_jugadas {
-  final String benthorJugadas =
+class RepositorioJuegosJugadosPruebas extends RepositorioJuegosJugados {
+  final String _benthorJugadas =
       """ <plays username="benthor" userid="597373" total="1737" page="1" termsofuse="https://boardgamegeek.com/xmlapi/termsofuse">
 <play id="34017961" date="2019-02-21" quantity="1" length="0" incomplete="0" nowinstats="0" location="">
 <item name="The Dwarf King" objecttype="thing" objectid="85250">
@@ -748,24 +751,29 @@ class Repositorio_jugadas extends repositorio_jugadas {
 </plays>""";
 
   @override
-  Either<Problema, RegistroJugadas> obtenerJugadasRegistradas() {
-    throw UnimplementedError();
+  Future<Either<Problema, Set<JuegoJugado>>> obtenerJugadasRegistradas(
+      NickFormado nick) {
+      if (nick.valor == 'benthor') {
+      final documento = XmlDocument.parse(_benthorJugadas);
+      return Future.value(obtenerJuegosJugadosDesdeXML(documento));
+    }
   }
 
-  List obtenerValorCampo(XmlDocument documento) {
-    List<String> lista = [];
+  Either<Problema, List<JuegoJugado>>obtenerJuegosJugadosDesdeXML(XmlDocument documento{
+    const String campoItem = 'item';
+    Set<JuegoJugado> juegosJugados;
+    final juegosEncontrado = documento.findAllElements(campoItem);
 
-    documento
-        .findAllElements("plays")
-        .first
-        .findAllElements("play")
-        .forEach((element) {
-      String jugada =
-          element.findAllElements("item").first.getAttribute("name") ?? "";
+    if (juegosEncontrado.isEmpty) return Left(VersionIncorrectaXml());
 
-      jugada == "" ? null : lista.add(jugada);
-    });
+    for (var i = 0; i < count; i++) {
+      
+    }
+      
+    
 
-    return lista;
+    return juegosEncontrado.first.getAttribute('name');
   }
+
+  
 }
