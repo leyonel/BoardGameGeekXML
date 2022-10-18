@@ -1,0 +1,85 @@
+<plays username="fokuleh" userid="1518480" total="1408" page="003" termsofuse="https://boardgamegeek.com/xmlapi/termsofuse">
+<play id="56591056" date="2021-12-23" quantity="1" length="8" incomplete="0" nowinstats="0" location="Casa Juandalf">
+<item name="No Thanks!" objecttype="thing" objectid="12942">
+<subtypes>
+<subtype value="boardgame"/>
+</subtypes>
+</item>
+<players>
+<player username="fokuleh" userid="1518480" name="Juan Carlos" startposition="1" color="White" score="-35" new="0" rating="0" win="0"/>
+<player username="juandalf" userid="482490" name="Juandalf" startposition="2" color="White" score="-16" new="0" rating="0" win="0"/>
+<player username="Shammuk" userid="592933" name="Christian Solano" startposition="3" color="White" score="-57" new="0" rating="0" win="0"/>
+<player username="Ulises21" userid="849704" name="Ulises Vazquez" startposition="4" color="White" score="-48" new="0" rating="0" win="0"/>
+<player username="" userid="0" name="Melki" startposition="5" color="White" score="-15" new="0" rating="0" win="1"/>
+</players>
+</play>
+<play id="56490886" date="2021-12-19" quantity="1" length="67" incomplete="0" nowinstats="0" location="Casa Club">
+<item name="Abyss" objecttype="thing" objectid="155987">
+<subtypes>
+<subtype value="boardgame"/>
+</subtypes>
+</item>
+<players>
+<player username="fokuleh" userid="1518480" name="Juan Carlos" startposition="1" color="White" score="56" new="0" rating="0" win="0"/>
+<player username="" userid="0" name="Martin Perales" startposition="2" color="White" score="53" new="0" rating="0" win="0"/>
+<player username="" userid="0" name="Sousa" startposition="3" color="White" score="73" new="0" rating="0" win="0"/>
+<player username="Shammuk" userid="592933" name="Christian Solano" startposition="4" color="White" score="76" new="0" rating="0" win="1"/>
+<player username="Ulises21" userid="849704" name="Ulises Vazquez" startposition="5" color="White" score="46" new="0" rating="0" win="0"/>
+</players>
+</play>
+<play id="56492234" date="2021-12-19" quantity="1" length="26" incomplete="0" nowinstats="0" location="Casa Club">
+<item name="King of Tokyo: Dark Edition" objecttype="thing" objectid="293141">
+<subtypes>
+<subtype value="boardgame"/>
+<subtype value="boardgameimplementation"/>
+</subtypes>
+</item>
+<players>
+<player username="fokuleh" userid="1518480" name="Juan Carlos" startposition="1" color="White" score="0" new="0" rating="0" win="0"/>
+<player username="" userid="0" name="Martin Perales" startposition="2" color="White" score="0" new="0" rating="0" win="0"/>
+<player username="" userid="0" name="Sousa" startposition="3" color="White" score="0" new="0" rating="0" win="0"/>
+<player username="Shammuk" userid="592933" name="Christian Solano" startposition="4" color="White" score="7" new="0" rating="0" win="1"/>
+<player username="Ulises21" userid="849704" name="Ulises Vazquez" startposition="5" color="White" score="0" new="0" rating="0" win="0"/>
+</players>
+</play>
+<play id="56488149" date="2021-12-19" quantity="1" length="15" incomplete="0" nowinstats="0" location="Casa Club">
+<item name="Loot" objecttype="thing" objectid="770">
+<subtypes>
+<subtype value="boardgame"/>
+</subtypes>
+</item>
+<players>
+<player username="fokuleh" userid="1518480" name="Juan Carlos" startposition="1" color="White" score="23" new="0" rating="0" win="0"/>
+<player username="" userid="0" name="Sousa" startposition="2" color="White" score="37" new="0" rating="0" win="0"/>
+<player username="Shammuk" userid="592933" name="Christian Solano" startposition="3" color="White" score="40" new="0" rating="0" win="1"/>
+</players>
+</play>
+<play id="56501681" date="2021-12-19" quantity="1" length="62" incomplete="0" nowinstats="0" location="Casa Club">
+<item name="Sheriff of Nottingham" objecttype="thing" objectid="157969">
+<subtypes>
+<subtype value="boardgame"/>
+<subtype value="boardgameimplementation"/>
+</subtypes>
+</item>
+<players>
+<player username="fokuleh" userid="1518480" name="Juan Carlos" startposition="1" color="White" score="100" new="0" rating="0" win="0"/>
+<player username="" userid="0" name="Martin Perales" startposition="2" color="White" score="105" new="0" rating="0" win="0"/>
+<player username="" userid="0" name="Sousa" startposition="3" color="White" score="98" new="0" rating="0" win="0"/>
+<player username="Shammuk" userid="592933" name="Christian Solano" startposition="4" color="White" score="103" new="0" rating="0" win="0"/>
+<player username="Ulises21" userid="849704" name="Ulises Vazquez" startposition="5" color="White" score="135" new="0" rating="0" win="1"/>
+<player username="" userid="0" name="Melki" startposition="6" color="White" score="108" new="0" rating="0" win="0"/>
+</players>
+</play>
+<play id="56431105" date="2021-12-17" quantity="1" length="39" incomplete="0" nowinstats="0" location="Oficina">
+<item name="Robinson Crusoe: Adventures on the Cursed Island" objecttype="thing" objectid="121921">
+<subtypes>
+<subtype value="boardgame"/>
+</subtypes>
+</item>
+<comments>Escenario 1</comments>
+<players>
+<player username="fokuleh" userid="1518480" name="Juan Carlos" startposition="1" color="White" score="0" new="0" rating="0" win="0"/>
+<player username="" userid="0" name="Vicente Munguia" startposition="2" color="White" score="0" new="0" rating="0" win="0"/>
+</players>
+</play>
+</plays>
